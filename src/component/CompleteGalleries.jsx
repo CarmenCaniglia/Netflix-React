@@ -16,10 +16,11 @@ const CompleteGalleries = () => {
         </Dropdown>
         <div className="d-flex ms-auto align-items-center d-none d-sm-block">
           <a className="text-secondary view-box" href="index.html">
-            <i className="bi bi-text-left border px-3 py-1"></i>
+          <i className="bi bi-grid border border px-3 py-1"></i>
+            
           </a>
           <a className="text-secondary view-box" href="index.html">
-            <i className="bi bi-grid border border px-3 py-1"></i>
+          <i className="bi bi-text-left border px-3 py-1"></i>
           </a>
         </div>
       </Container>

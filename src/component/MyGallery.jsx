@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Alert, Carousel, Col, Container, Row, Spinner } from "react-bootstrap";
-
+import './style.css'
 class MyGallery extends Component{
 
     state = {
