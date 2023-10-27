@@ -64,9 +64,9 @@ class MyGallery extends Component{
               {this.state.isLoading && <Spinner animation="border" variant="danger" />}
               {this.state.hasError && <Alert variant="danger">Error: {this.state.error}</Alert>}
 
-              <Carousel>
+              <Carousel className="carousel-container" >
                 {filmsInGroups.map((filmGroup, groupIndex) => (
-                  <Carousel.Item key={groupIndex}>
+                  <Carousel.Item key={groupIndex} className="carousel">
                     <Row className="d-relative">
                       {filmGroup.map((film) => (
                         <Col key={film.imdbID} lg={2} xs={12}>
