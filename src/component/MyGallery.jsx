@@ -58,12 +58,12 @@ class MyGallery extends Component{
         
         <>
         <Container fluid className="mb-4" >
-          <h5>{this.props.film}: La saga completa!</h5>
+          
           <Row>
             <Col>
               {this.state.isLoading && <Spinner animation="border" variant="danger" />}
               {this.state.hasError && <Alert variant="danger">Error: {this.state.error}</Alert>}
-
+              <h5>{this.props.film}: La saga completa!</h5>
               <Carousel className="carousel-container" >
                 {filmsInGroups.map((filmGroup, groupIndex) => (
                   <Carousel.Item key={groupIndex} className="carousel">
@@ -73,7 +73,7 @@ class MyGallery extends Component{
                           <img 
                           src={film.Poster} 
                           alt={film.Title}
-                          className="carousel-item d-block mx-1"
+                          className="carousel-item d-block"
                            />
                         </Col>
                       ))}
